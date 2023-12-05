@@ -1,0 +1,32 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container {
+  @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20;
+}
+
+.btn-primary {
+  @apply font-semibold transition duration-200 shadow-md md:mb-0 px-2 py-2 md:px-2 md:py-2 m-2 text-lg rounded-md border-transparent border-2 text-white bg-[#7E90FE;] hover:bg-cyan-400;
+  animation: gradientAnimation 3s ease infinite; /* Apply the animation to the button */
+}
+
+.active {
+  @apply font-medium tracking-wide text-[#7E90FE] transition-colors duration-200;
+}
+
+.default {
+  @apply font-medium tracking-wide text-[#757575] transition-colors duration-200 hover:text-cyan-600;
+}

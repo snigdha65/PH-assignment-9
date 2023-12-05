@@ -1,0 +1,22 @@
+.applied-jobs-img{
+    width: 244px;
+    hight: 244px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: gray;
+    
+
+}
+
+.applied-jobs-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px; 
+    padding: 16px; 
+    margin-bottom: 16px;
+  }
+
+
+  .feature-image{
+    width: 128px;
+    hight: 100px;
+  }
